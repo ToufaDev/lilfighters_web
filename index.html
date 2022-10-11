@@ -34,7 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
+</div>
             </div><!-- /.navbar-header -->
 
             <div class="collapse navbar-collapse" id="navbar-items">
@@ -88,13 +88,15 @@
                     <h3 class="section-title multiple-title">On fait quoi cette annnée</h3>
 
 		   
-                    <p>Cette année, on reserve 3 jours entiers, du 2 au 4 décembre inclus. On kidnappe Blackmane pour s'assurer de sa venue. On a invité des joueurs internationnaux. gmini nous a fournit un visuel de fou furieu. On a même préparé des goodies. Et on laissera pas Balcork gagner le solo. C'est certains : ça sera la meilleur édition par rapport à toutes les éditions précédentes. Regarder cette image de Baz' et son regard vraiment très motivé.</p>
+                    <p>Cette année, on reserve 3 jours entiers, du 2 au 4 décembre inclus. On kidnappe Blackmane pour s'assurer de sa venue. On a invité des joueurs internationnaux. gmini nous a fournit un visuel de fou furieux. On a des sides event sur Alpha 3 et Breakers Revenge. Et on laissera pas Balcork gagner le solo. C'est certains : ça sera la meilleur édition par rapport à toutes les éditions précédentes. Regarder cette image de Baz' et son regard vraiment très motivé.</p>
 
                     <ul class="list-arrow-right">
 
-                        <li>Vraiment beaucoup de bornes</li>
+                        <li>5 setup versus Super Street Fighter 2X</li>
+                        <li>2 setup versus Street Fighter Alpha 3</li>
+                        <li>2 setup versus Breakers Revenge</li>
+                        <li>Une affiche en vente par gmini</li>
                         <li>Des joueurs internationnaux</li>
-                        <li>Des visuels et des goodies</li>
                         <li>Voir Baz perdre contre des rangs C « In real Life »</li>
                     
                     </ul>
@@ -232,19 +234,49 @@
         </div>
     </section>
 
-    <section id="registration" class="section registration">
+    <section id="registration" class="registration">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+              <div class="col-md-12">
+		<br>
                     <h3 class="section-title">Tarifs &amp; inscription </h3>
                 </div>
             </div>
-	    <p> Samedi - Dimanche : 35€ </p>
-	    <p> Samedi - Dimanche + Vendredi : 40€ </p>
 	    <div id="smart-button-container">
-	      <div style="text-align: center;">
-		<div id="paypal-button-container"></div>
-	      </div>
+
+	      <p> 1 Journée : 20€ </p>
+	      <p> Samedi - Dimanche : 35€ </p>
+	      <p> Samedi - Dimanche + Vendredi : 40€ </p>
+	      <p style="font-weight: bold;">Remplis bien à minima ton pseudo sinon l'inscription risque de ne pas être pris en compte !</p>
+	      <label for="tournaments">A quelle journée veux-tu t'inscrire ?</label><br>
+	      <input type="checkbox" id="vendredi" name="vendredi" value="1" onclick="myBlurFunction()" checked>
+	      <label for="vendredi">Vendredi</label><br>
+	      <input type="checkbox" id="samedi" name="samedi" value="1" onclick="myBlurFunction()" checked>
+	      <label for="2xsolo">Samedi</label><br>
+	      <input type="checkbox" id="dimanche" name="dimanche" value="1" onclick="myBlurFunction()" checked>
+	      <label for="2xsolo">Dimanche</label><br>
+	      
+	      <label for="pseudo">Pseudo:</label><br>
+	      <input type="text" id="pseudo" name="pseudo" value="" onblur="myBlurFunction()"><br>
+
+	      <label for="teammate">Partenaire pour le 2vs2: tu peux laisser vide si tu n'en as pas et nous envoyer un mail plus tard :) </label><br>
+	      <input type="text" id="teammate" name="teammate" value="" onblur="myBlurFunction()"><br>
+
+	      <label for="teamname">Nom d'équipe pour le 2vs2:</label><br>
+	      <input type="text" id="teamname" name="teamname" value="" onblur="myBlurFunction()"><br>
+
+	      <label for="tournaments">À quel(s) tournoi(s) souhaites-tu t'inscrire ?</label><br>
+	      <input type="checkbox" id="2xsolo" name="2xsolo" value="1" onclick="myBlurFunction()" checked>
+	      <label for="2xsolo">SSF2x Solo</label><br>
+	      <input type="checkbox" id="2xtag" name="2xtag" value="2" onclick="myBlurFunction()" checked>
+	      <label for="2xtag">SSF2x 2on2 TAG</label><br>
+	      <input type="checkbox" id="alpha3" name="alpha3" value="4" onclick="myBlurFunction()">
+	      <label for="alpha3">Alpha 3 Side Event</label><br>
+	      <input type="checkbox" id="breakers" name="breakers" value="8" onclick="myBlurFunction()">
+	      <label for="breakers"> Breakers Revenge Side Event</label><br>
+	      
+	      <div id="paypal-button-container"></div>
+	      
 	    </div>
     </section>
 
@@ -254,9 +286,9 @@
                 <div class="col-md-12">
                     <h3 class="text-uppercase mt0 font-400">Listes des inscris</h3>
                     
-                    <p>disponible prochainement</p>
+                    <p>Ca peut prendre du temps pour se mettre à jour car on fait ça avec nos petites mains :)</p>
 
-                    <a class="btn btn-white" href="#">participants</a>
+                    <a class="btn btn-white" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRTfHFTGiRXsZUS0nlnnwJ6Ag7B-bUTm84FmWEKVdu_vT6aoWwZDZCK2-BrjjRAEHHlY56yZKTBB5cl/pubhtml">participants</a>
                 </div>
             </div>
         </div>
@@ -273,7 +305,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="schedule-box">
                         <div class="time">
-                            <time datetime="09:00">Vendredi 2 Décembre 14:00</time> - <time datetime="22:00">minuit</time>
+                            <time datetime="09:00">Vendredi 2 Décembre | 14:00</time> - <time datetime="22:00">minuit</time>
                         </div>
                         <h3>Freeplay</h3>
 			<p>non-stop</p>
@@ -282,21 +314,21 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="schedule-box">
                         <div class="time">
-                            <time datetime="10:00">Samedi 3 Décembre 10:00</time> - <time datetime="22:00">2h du matin</time>
+                            <time datetime="10:00">Samedi 3 Décembre | 10:00</time> - <time datetime="22:00">2h du matin</time>
                         </div>
                         <h3>Tournoi SSF2X Solo</h3>
-			<h4>Side event Breakerz Revenge</h4>
-                        <p>14h - 23h</p>
+			<h4>+ Side event Street Fighter Alpha 3</h4>
+                        <p>horaire des tournois : 14h - 23h</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="schedule-box">
                         <div class="time">
-                            <time datetime="10:00">Dimanche 4 Décembre 10:00</time> - <time datetime="22:00">21h</time>
+                            <time datetime="10:00">Dimanche 4 Décembre | 10:00</time> - <time datetime="22:00">21h</time>
                         </div>
                         <h3>Tournoi SSF2X 2vs2 TAG</h3>
-			<h4>Side event Street Fighter Alpha 3</h4>
-                        <p>10h - 17h</p>
+			<h4>+ Side event Breakers Revenge</h4>
+                        <p>horaire des tournois : 10h - 17h</p>
                     </div>
                 </div>
             </div>
@@ -497,8 +529,31 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="https://www.paypal.com/sdk/js?client-id=AQwMzA3df_XCLKHo78dmUmN3KyxEKyxLqnYKLiS0HwDxPU08lbLLDY8ff2DwposmIFOFxvjWjcviFj2v&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AQwMzA3df_XCLKHo78dmUmN3KyxEKyxLqnYKLiS0HwDxPU08lbLLDY8ff2DwposmIFOFxvjWjcviFj2v&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script> -->
+    <script src="https://www.paypal.com/sdk/js?client-id=ATgl8tCOQCbs5Usu3PaLilMuNcGlO52pXOhodH-IEkpF8hGvO-A11D1R7Oj--jreO6-tIlOvdVuBtZOb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
     <script>
+      var comment_txt="";
+      var prix=40;
+      function myBlurFunction() {
+	  //comment_txt = comment_box.value + "/" + pseudo.value + "/" + teammate.value + "/" + teamname+ "/" + 2xsolo.value + "/" + 2xtag.value + "/" + alpha3.value + "/" + breakers;
+	  comment_txt = pseudo.value+"/"+ document.getElementById("vendredi").checked + document.getElementById("samedi").checked + document.getElementById("dimanche").checked+"/" + teammate.value+"/"+teamname.value+"/solo:"+document.getElementById("2xsolo").checked+"/tag:"+document.getElementById("2xtag").checked+"/a3:"+document.getElementById("alpha3").checked+"/br:"+document.getElementById("breakers").checked
+	  if (document.getElementById("samedi").checked && document.getElementById("dimanche").checked && document.getElementById("vendredi").checked) {
+	      prix=40;
+	  }
+	  else if ( (document.getElementById("samedi").checked && document.getElementById("dimanche").checked)
+	       || (document.getElementById("vendredi").checked && document.getElementById("samedi").checked)
+	       || (document.getElementById("vendredi").checked && document.getElementById("dimanche").checked)
+	     ) {
+	      prix=35;
+	  }
+	  else if ( document.getElementById("samedi") || document.getElementById("dimanche") || document.getElementById("vendredi") ) {
+	      prix=20;
+	  }
+	  else {
+	      prix=0;
+	  }
+	  console.log(comment_txt)
+      }
       function initPayPalButton() {
 	  paypal.Buttons({
               style: {
@@ -510,8 +565,10 @@
               },
 
               createOrder: function(data, actions) {
+		  //console.log(comment_txt)
+		  
 		  return actions.order.create({
-		      purchase_units: [{"description":"Participation Vendredi - Samedi - DImanche","amount":{"currency_code":"EUR","value":40}}]
+		      purchase_units: [{"description":"Participation Vendredi - Samedi - DImanche","custom_id": comment_txt, "amount":{"currency_code":"EUR","value":prix}}]
 		  });
               },
 

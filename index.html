@@ -257,13 +257,13 @@
 	      <label for="2xsolo">Dimanche</label><br>
 	      
 	      <label for="pseudo">Pseudo:</label><br>
-	      <input type="text" id="pseudo" name="pseudo" value="" onblur="myBlurFunction()"><br>
+	      <input type="text" id="pseudo" name="pseudo" value="" maxlength="20" onblur="myBlurFunction()"><br>
 
-	      <label for="teammate">Partenaire pour le 2vs2: tu peux laisser vide si tu n'en as pas et nous envoyer un mail plus tard :) </label><br>
-	      <input type="text" id="teammate" name="teammate" value="" onblur="myBlurFunction()"><br>
+	      <label for="teammate">Partenaire pour le 2on2: tu peux laisser vide si tu n'en as pas et nous envoyer un mail plus tard :) </label><br>
+	      <input type="text" id="teammate" name="teammate" value="" maxlength="20" onblur="myBlurFunction()"><br>
 
-	      <label for="teamname">Nom d'équipe pour le 2vs2:</label><br>
-	      <input type="text" id="teamname" name="teamname" value="" onblur="myBlurFunction()"><br>
+	      <label for="teamname">Nom d'équipe pour le 2on2:</label><br>
+	      <input type="text" id="teamname" name="teamname" value="" maxlength="60" onblur="myBlurFunction()"><br>
 
 	      <label for="tournaments">À quel(s) tournoi(s) souhaites-tu t'inscrire ?</label><br>
 	      <input type="checkbox" id="2xsolo" name="2xsolo" value="1" onclick="myBlurFunction()" checked>
@@ -535,8 +535,8 @@
       var comment_txt="";
       var prix=40;
       function myBlurFunction() {
-	  //comment_txt = comment_box.value + "/" + pseudo.value + "/" + teammate.value + "/" + teamname+ "/" + 2xsolo.value + "/" + 2xtag.value + "/" + alpha3.value + "/" + breakers;
-	  comment_txt = pseudo.value+"/"+ document.getElementById("vendredi").checked + document.getElementById("samedi").checked + document.getElementById("dimanche").checked+"/" + teammate.value+"/"+teamname.value+"/solo:"+document.getElementById("2xsolo").checked+"/tag:"+document.getElementById("2xtag").checked+"/a3:"+document.getElementById("alpha3").checked+"/br:"+document.getElementById("breakers").checked
+
+	  comment_txt = pseudo.value+"/vendredi:"+ document.getElementById("vendredi").checked +" samedi:"+ document.getElementById("samedi").checked +" dimanche:" document.getElementById("dimanche").checked+"/" + teammate.value+"/"+teamname.value+"/solo:"+document.getElementById("2xsolo").checked+"/tag:"+document.getElementById("2xtag").checked+"/a3:"+document.getElementById("alpha3").checked+"/br:"+document.getElementById("breakers").checked
 	  if (document.getElementById("samedi").checked && document.getElementById("dimanche").checked && document.getElementById("vendredi").checked) {
 	      prix=40;
 	  }

@@ -326,6 +326,17 @@ ul li {
   background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
   display: table;
 }
+
+.rules-header {
+  width: 100%;
+  height: 20%;
+  min-height: 20vh;
+  position: relative;
+  text-align: center;
+  background: url(../images/backgrounds/rules-header.jpg) no-repeat center center/cover;
+  display: table;
+}
+
 .site-header::before {
   content: "";
   position: absolute;
@@ -399,6 +410,32 @@ ul li {
   font-weight: 400;
 }
 
+/* 6.2.5 Section: Trailer */
+
+.trailer {
+    text-align: center;
+    color: #d1d0df;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 0%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+/*  position: absolute;*/
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 630;
+}
+
 /* 
  * 6.3 Section: Speaker
  */
@@ -422,6 +459,17 @@ ul li {
 /* 
  * 6.4 Section: Registration & Pricing
  */
+
+/*.registration {
+    background-color: #18181d;
+}*/
+
+.registration input {
+    color: black;
+}
+.card-fields-container {
+    color: #fff;
+}
 /* 
  * 6.5 Section: Contribution
  */
@@ -434,13 +482,14 @@ ul li {
  * 6.6 Section: Schedule
  */
 .schedule-box {
-  position: relative;
+    position: relative;
   background-color: #000;
   color: #fff;
   text-align: center;
   padding: 50px 0;
   margin: 25px 0 0;
 }
+
 .schedule-box::before {
   content: '';
   position: absolute;
@@ -612,3 +661,14 @@ ul li {
 .site-footer .social-block li a:hover, .site-footer .social-block li a:focus {
   opacity: 0.8;
 }
+
+.blogwidevideo {
+    width: 560px; /* you have to have a size or this method doesn't work */
+    height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+    padding-bottom: 100 
+    position: absolute; /* positions out of the flow, but according to the nearest parent */
+    top: 100; right: 0; /* confuse it i guess */
+    bottom: 100; left: 0;
+    margin: auto; /* make em equal */
+}
+

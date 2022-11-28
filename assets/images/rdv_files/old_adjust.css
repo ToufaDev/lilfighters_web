@@ -1,0 +1,413 @@
+@charset "utf-8";
+/* 共通 */
+
+body {
+    text-align: left;
+}
+
+.zaigai_top #wrapper {
+    float: none;
+    width: auto;
+}
+
+.zaigai_top #wrapper #main_contents {
+    float: none;
+    width: auto;
+}
+
+.zaigai_top #wrapper #side_left {
+    float: none;
+    width: auto;
+}
+
+.zaigai_top .noRight #main_contents {
+    float: none;
+    width: auto;
+}
+
+.zaigai_top .noRight .pickupLayoutR, .zaigai_top .noRight .pickupLayoutL {
+    width: auto;
+}
+
+.zaigai_top #wrapper.noRight {
+    float: none;
+    width: auto;
+}
+
+.zaigai_top #wrapper.noRight #main_contents {
+    width: auto;
+}
+
+.zaigai_top #wrapper.noRight .pickupLayoutR, .zaigai_top #wrapper.noRight .pickupLayoutL {
+    width: auto;
+}
+
+#logo-emb, #emb-name {
+    margin: 0;
+    width: auto;
+    float: none;
+}
+
+#header {
+    color: #333;
+}
+
+#header a {
+    color: #000066;
+}
+
+#header a:hover {
+    color: #fff;
+    background-color: #192a80;
+}
+
+#header a:visited {
+    color: #53c;
+}
+
+#header a:visited:hover {
+/*    color: #fff;*/
+}
+
+body.large #header {
+    background-image: url(/emb-japan/files/000061767.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 135px 0 !important;
+    background-color: transparent !important;
+}
+
+#func {
+    float: none;
+    text-align: left;
+    width: auto;
+}
+
+dl#textchanger {
+    margin-right: 0px;
+}
+
+dl#textchanger dd.small a, dl#textchanger dd.middle a {
+    padding: 0;
+}
+
+#contents {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#contents .text_area {
+    width: auto;
+    padding-right: 0;
+}
+
+#contents .text_area p, #contents .text_area ul, #contents .text_area ol, #contents .text_area dl {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+#contents .text_area:after {
+    content: none;
+}
+
+#contents hr {
+    display: block;
+}
+
+ul.linklist_date {
+    margin-bottom: 0;
+}
+
+#contents ul.linklist_date li .date {
+    margin: 0 0 5px;
+}
+
+.footer_page_link {
+    border-bottom: none;
+}
+
+.footer_page_link .pagemove, .footer_page_link .pagetop {
+    margin: 5px 0 1em;
+    padding: 0;
+    line-height: normal;
+    background-image: none;
+}
+
+.footer_page_link:after {
+    content: none;
+}
+
+#footer {
+    padding: 0;
+}
+
+#footer .copyright {
+    margin: 5px 0 1em;
+}
+
+/* 個別 */
+
+#page-topindex .top-section h2 {
+    background-color: transparent;
+    border: none;
+    color: #333;
+}
+
+#page-topindex .top-section h2 span {
+    border-left: none;
+    padding: 0;
+}
+
+.menu-section .emergency {
+    text-align: left;
+    font-size: 1em;
+    margin: 0;
+    font-weight: normal;
+}
+
+@media print, screen and (min-width: 1025px) {
+    #contents .text_area {
+        padding-right: 0;
+    }
+}
+
+@media print, screen and (max-width: 1024px) {
+    #contents .text_area {
+        padding-left: 0;
+    }
+}
+
+.text .any-area {}
+
+.text .any-area .image_left {
+    float: left;
+    padding: 0 20px 10px 0;
+}
+
+.text .any-area .image_right {
+    float: right;
+    padding: 0 0 10px 20px;
+}
+
+.text .any-area .image_center {
+    text-align: center;
+    padding: 0 0 20px 0;
+    letter-spacing: -0.4em;
+}
+
+.text .any-area .image_area {
+    vertical-align: top;
+}
+
+.text .any-area .image_area img {
+    max-width: 210px;
+}
+
+.text .any-area .image_left .image_area, .text .any-area .image_right .image_area {
+    padding: 0 0 10px 0;
+}
+
+.text .any-area .image_center .image_area {
+    padding: 0 10px;
+    display: inline-block;
+    letter-spacing: normal;
+}
+
+.text .any-area .image_left span.caption, .text .any-area .image_right span.caption, .text .any-area .image_center span.caption {
+    margin: 2px 0 0 0;
+    display: block;
+    text-align: center;
+    max-width: 210px;
+}
+
+.text .any-area .text {
+    padding: 0 0 20px 0;
+}
+
+.text .any-area .text ul, .text .any-area .text ol {
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.text .any-area .text ul li, .text .any-area .text ol li {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper .text .any-area .text ul li, #wrapper.text .any-area .text ol li {
+    margin-bottom: 0.5em;
+}
+
+.text .any-area .text {
+    overflow: hidden;
+}
+
+.text .any-area p, .text .any-area ul, .text .any-area ol, .text .any-area dl {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+#wrapper #contents .text .any-area li p, #wrapper #contents .text .any-area table p {
+    margin: 0;
+}
+
+/* .zaigai-top → #page-topindex */
+
+.zaigai_top ul.linklist_date {
+    margin: 0 0 10px 0;
+}
+
+.zaigai_top ul.allList {
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+    zoom: 1;
+    text-align: right;
+}
+
+.zaigai_top ul.allList li {
+    margin: 0 0 0 20px;
+    padding: 0 0 0 20px;
+    background: url(/files/000019664.gif) left 0.3em no-repeat;
+    list-style: none;
+    zoom: 1;
+    display: inline-block;
+}
+
+.zaigai_top #pickupLayoutWrapper .text_area {
+    padding: 0 10px;
+}
+
+.zaigai_top .pickupLayoutL {
+    width: 345px;
+    float: left;
+}
+
+.zaigai_top .pickupLayoutR {
+    width: 345px;
+    float: right;
+}
+
+.zaigai_top #wrapper .pickupLayoutL {
+    width: 255px;
+}
+
+.zaigai_top #wrapper .pickupLayoutR {
+    width: 255px;
+}
+
+.zaigai_top dl.linklist dt {
+    background: none;
+    border: none;
+    display: block;
+    background-color: #1756bd;
+    border: 1px solid #1756bd;
+    padding: 2px;
+    color: #fff;
+    font-size: 1.2857em;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+
+.zaigai_top #side_area dl.linklist:first-child dt:first-child {
+    margin: 0;
+}
+
+.zaigai_top dl.linklist .first {
+    border-top: 1px solid #bfbfbf;
+    margin: 0 0 0 0;
+}
+
+.zaigai_top dl.linklist dt span {
+    display: block;
+    border-left: 2px solid #fff;
+    padding: 4px 22px 4px 8px;
+}
+
+.zaigai_top dl.linklist dd {
+    margin: 0 0 0 0;
+    padding: 5px 10px 5px 10px;
+    background: url(/files/000061104.gif) left top repeat-x;
+    border-top: 1px solid #ccc;
+    list-style: none;
+    zoom: 1;
+    border: 1px solid #bfbfbf;
+    border-top: none;
+}
+
+.zaigai_top dl.linklist dd.img {
+    padding: 15px;
+    max-width: 200px;
+}
+
+.zaigai_top dl.linklist dd.img img {
+    max-width: 100%;
+}
+
+.zaigai_top dl.linklist dd.posleft {
+    text-align: left;
+}
+
+.zaigai_top dl.linklist dd.poscenter {
+    text-align: center;
+}
+
+.zaigai_top dl.linklist dd span {
+    display: block;
+    text-align: center;
+}
+
+.zaigai_top dl.linklist dd.img span {
+    display: inline;
+}
+
+.zaigai_top dl.linklist dd.img span a img {
+    margin: 0 5px 5px 0;
+}
+
+.zaigai_top dl.linklist .caption, .zaigai_top dl.linklist .owner {
+    text-align: center;
+}
+
+/*********************************************************************
+旧スタイルシート　自由入力
+*********************************************************************/
+
+/* 共通 */
+
+#main .any-area img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/*自由入力欄内部テーブル幅*/
+
+@media screen and (max-width: 320px) {
+    #main .any-area table {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #main .any-area table {
+        max-width: 440px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #main .any-area table {
+        max-width: 720px;
+    }
+}
+
+@media print, screen and (min-width: 768px) {
+    #main .any-area table {
+        max-width: 580px;
+    }
+}
+
+@media print, screen and (min-width: 1025px) {
+    #main .any-area table {
+        max-width: 1120px;
+    }
+}
